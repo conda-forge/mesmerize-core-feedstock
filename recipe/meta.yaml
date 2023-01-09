@@ -29,7 +29,6 @@ requirements:
     - matplotlib-base
     - click
     - psutil
-    - pims
     - jupyterlab
 
 test:
