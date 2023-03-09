@@ -1,5 +1,5 @@
 {% set name = "mesmerize-core" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/nel-lab/mesmerize-core/archive/v{{ version }}.tar.gz
-  sha256: c07fde93a57919c63a18bad3024cdc555026132e19a43d9a219f4acdb11241df
+  sha256: 993d03433d463df29a37436b59d839288868037378deab5cd85a4116fa4d0429
 
 build:
   noarch: python
