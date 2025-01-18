@@ -12,14 +12,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - caiman >=1.9.10
     - pandas >=1.5.0
     - requests
@@ -32,6 +32,8 @@ requirements:
     - jupyterlab
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - mesmerize_core
 
