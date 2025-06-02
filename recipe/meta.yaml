@@ -31,6 +31,8 @@ requirements:
     - click
     - psutil
     - jupyterlab
+    - mslex
+    - filelock
 
 test:
   imports:
